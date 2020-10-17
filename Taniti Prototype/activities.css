@@ -1,0 +1,136 @@
+.image-maps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+.image-map {
+    position: relative;
+    width: 24%;
+}
+
+.image-map__link {
+    display: block;
+}
+
+.image-map__image {
+    width: 100%;
+    vertical-align: bottom;
+    border-radius: 20px;
+    border: 3px solid #2d58ce;
+}
+
+.image-map__image:hover,
+.image-map__image:active {
+    filter: brightness(0.5);
+}
+
+.image-map__caption {
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em 0 2em 0;
+    border: 4px solid #10369c;
+    border-left: none;
+    border-right: none;
+    background: #2d58ce;
+}
+
+.article__info {
+    width: 45%;
+    margin: 1em;
+    padding: 2em;
+    background: white;
+    border: 3px solid #10369c;
+    border-radius: 20px;
+}
+
+.article__info--header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 36px;
+    color: #10369c;
+    border-bottom: 2px solid #0b256980;
+}
+
+.article__info--paragraph {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+}
+
+.article__info--list__items {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+.article__info--list__item {
+    font-size: 18px;
+    flex: 1 1 50%;
+    margin: 1em 0 1em 0;
+}
+
+.article__info--link {
+    text-align: center;
+    text-decoration: none;
+}
+
+.article__info--link h3{
+    color: white;
+    background: #df3400;
+    border: 3px solid #631700;
+    border-radius: 20px;
+    padding: 0.8em;
+}
+
+.article__info--link h3:hover,
+.article__info--link h3:active {
+    color: #df3400;
+    background: white;
+}
+
+.article__image {
+    margin: 1em 1em 1em 1em;
+    width: 45%;
+    align-self: baseline;
+    border: 3px solid #10369c;
+    border-radius: 20px;
+}
+
+@media (max-width: 950px) {
+
+    .image-maps {
+        flex-wrap: wrap;
+    }
+
+    .image-map {
+        width: 48%;
+        margin-bottom: 1em;
+    }
+
+    .article__info {
+        width: 75%;
+    }
+
+    .article__image {
+        width: 75%;
+    }
+}

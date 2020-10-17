@@ -1,0 +1,57 @@
+.home__overview {
+    position: relative;
+    background: url("beach front view.jpg") 50% 42%;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+
+.home__overview--header {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0.75em;
+    font-size: 40px;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    color: white;
+}
+
+.home__main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+}
+
+.home__content {
+    grid-column: 1 / 6;
+    padding: 2em;
+    margin: 3em 2em;
+    border: 5px solid #2d58ce;
+    border-radius: 20px;
+    background: white;
+}
+
+.content__header {
+    margin-bottom: 0;
+}
+
+.home__content--paragraph {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+}
+
+.home__images {
+    grid-column: 6 / 9;
+    padding: 2em;
+}
+
+.home__image {
+    width: 100%;
+    margin: 1em 0;
+    border: 5px solid #2d58ce;
+    border-radius: 20px;
+}
